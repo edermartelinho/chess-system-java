@@ -2,13 +2,18 @@ package boardgame;
 
 public class Position {
 	
+	//Encapsulationn
+	
 	private int row;
 	private int column;
-	public Position(int row, int column) {
 	
+	//Constructors
+	
+	public Position(int row, int column) {
 		this.row = row;
 		this.column = column;
 	}
+	
 	public int getRow() {
 		return row;
 	}
@@ -24,6 +29,7 @@ public class Position {
 	
 	//to string para mostrar a posicao na tela linha e coluna
 	//@overraid por ser uma sobreposicao
+	//A classe objeto e uma superclasse de todas as classes
 	
 	@Override
 	public String toString() {
