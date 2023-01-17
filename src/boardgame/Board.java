@@ -38,6 +38,8 @@ public class Board {
 	
 	}
 	
+	// Atribuicao da peca a posicao no tabuleiro
+	
 	public void placePiece(Piece piece, Position position) {
 		 pieces[position.getRow()][position.getColumn()] = piece;
 		 piece.position = position;

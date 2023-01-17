@@ -1,6 +1,9 @@
 package chess;
 
 import boardgame.Board;
+import boardgame.Position;
+import chess.pieces.King;
+import chess.pieces.Rook;
 
 //Esta classe  tem as regras do jogo
 
@@ -14,6 +17,7 @@ public class ChessMatch {
 	
 	public ChessMatch() {
 		board = new Board(8, 8);
+		initialSetup();
 	}
 	
 	//Esse metodo retorna uma matriz do jogo
@@ -39,5 +43,11 @@ public class ChessMatch {
 		
 		return mat;
     }
+	
+	private void initialSetup() {
+		board.placePiece(new Rook(board, Color.RED), new Position(6, 3));
+		board.placePiece(new King(board, Color.GREEN), new Position(3, 6));
+		
+	}
 }
     
