@@ -27,6 +27,11 @@ public class Position {
 		this.column = column;
 	}
 	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
+	}
+	
 	//to string para mostrar a posicao na tela linha e coluna
 	//@overraid por ser uma sobreposicao
 	//A classe objeto e uma superclasse de todas as classes
