@@ -24,7 +24,7 @@ public class Program {
 		
 	// esta e a funcao para imprimir as pecas da partida
 	
-		while (true) {
+		while (!chessMatch.getCheckMate()) {
 			try {
 				UI.clearScreen();
 			    UI.printMatch(chessMatch, captured);
@@ -55,6 +55,8 @@ public class Program {
 				sc.nextLine();
 			}
 		}
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 	}
 
 }
