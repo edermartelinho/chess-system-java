@@ -5,7 +5,7 @@ import boardgame.Position;
 import chess.ChessPiece;
 import chess.Color;
 
-public class Knight extends ChessPiece {
+public  class Knight extends ChessPiece {
 
 	public  Knight(Board board, Color color) {
 		super(board, color);
@@ -87,5 +87,7 @@ public class Knight extends ChessPiece {
 		
 		return mat;
 	}
+
+	
 
 }

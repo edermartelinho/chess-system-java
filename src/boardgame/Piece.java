@@ -10,9 +10,9 @@ public abstract class Piece {
 		position = null;
 	}
 	
-	//O getboard foi transformado em protected pois somente classe do mesmo pacote e subclasse vao poder
-    //acessar o tabuleiro de uma peca
-	
+	/*O getboard foi transformado em protected pois somente classe do mesmo pacote e subclasse vao poder
+    acessar o tabuleiro de uma peca
+	*/
 	protected Board getBoard() {
 		return board;
 	}
